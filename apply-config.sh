@@ -24,4 +24,5 @@ sudo sed -i 's/^defaultWelcomeMessage=.*/defaultWelcomeMessage=Bienvenido a <b>\
 sudo sed -i 's/^defaultWelcomeMessageFooter=.*/defaultWelcomeMessageFooter=Gracias por usar <a href="https:\/\/solutions\.myzonego\.com" target="_blank"><u>MyZoneGo<\/u><\/a>\./' /usr/share/bbb-web/WEB-INF/classes/bigbluebutton.properties
 sudo sed -i 's/^meetingExpireIfNoUserJoinedInMinutes=.*/meetingExpireIfNoUserJoinedInMinutes=10080/' /usr/share/bbb-web/WEB-INF/classes/bigbluebutton.properties
 sudo sed -i 's/^meetingExpireWhenLastUserLeftInMinutes=.*/meetingExpireWhenLastUserLeftInMinutes=10080/' /usr/share/bbb-web/WEB-INF/classes/bigbluebutton.properties
+sudo sed -i 's/^allowRequestsWithoutSession=.*/allowRequestsWithoutSession=true/' /usr/share/bbb-web/WEB-INF/classes/bigbluebutton.properties
 sudo sed -i $'s/proxy_set_header Connection "Upgrade";$/proxy_set_header Connection "Upgrade"; proxy_set_header Accept-Encoding ""; sub_filter_types *; sub_filter_once off; sub_filter \'\<\/head\>\' \'\<link rel="stylesheet" type="text\/css" href="https:\/\/bbb-assets\.nyc3\.digitaloceanspaces\.com\/styles\.css"\>\<\/head\>\';/g' /etc/bigbluebutton/nginx/bbb-html5.nginx
