@@ -13,7 +13,7 @@ yq w -i $HTML5_CONFIG public.app.copyright "©2021 MyZoneGo Inc."
 yq w -i $HTML5_CONFIG public.kurento.autoShareWebcam true
 yq w -i $HTML5_CONFIG public.kurento.skipVideoPreview true
 yq w -i $HTML5_CONFIG public.chat.startClosed true
-yq w -i $HTML5_CONFIG public.layout.hidePresentation true
+yq w -i $HTML5_CONFIG public.layout.autoSwapLayout true
 
 apt-get -qq install wget
 wget -nv https://bbb-assets.nyc3.cdn.digitaloceanspaces.com/favicon.ico -O /var/www/bigbluebutton-default/favicon.ico
