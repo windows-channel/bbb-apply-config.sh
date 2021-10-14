@@ -10,7 +10,7 @@ yq w -i $HTML5_CONFIG public.app.skipCheck true
 yq w -i $HTML5_CONFIG public.app.clientTitle "MyZoneGo"
 yq w -i $HTML5_CONFIG public.app.appName "MyZoneGo HTML5 Client"
 yq w -i $HTML5_CONFIG public.app.copyright "©2021 MyZoneGo Inc."
-yq w -i $HTML5_CONFIG public.kurento.autoShareWebcam true
+yq w -i $HTML5_CONFIG public.kurento.autoShareWebcam false
 yq w -i $HTML5_CONFIG public.kurento.skipVideoPreview true
 yq w -i $HTML5_CONFIG public.chat.startClosed true
 yq w -i $HTML5_CONFIG public.layout.autoSwapLayout true
